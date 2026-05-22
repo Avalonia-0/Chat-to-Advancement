@@ -1,0 +1,14 @@
+{
+	"required": true,
+	"package": "com.alonie.cta.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"mixins": [
+		"AdvancementFrameMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	},
+	"overwrites": {
+		"requireAnnotations": true
+	}
+}

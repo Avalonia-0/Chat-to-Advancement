@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "chat-to-advancements",
+	"version": "${version}",
+	"name": "Chat to Advancements",
+	"description": "Click an advancement name in chat to open the advancements screen and auto-scroll to centre that advancement.",
+	"authors": [
+		"Alonie"
+	],
+	"contact": {
+		"homepage": "https://github.com/Alonie/chat-to-advancements",
+		"sources": "https://github.com/Alonie/chat-to-advancements"
+	},
+	"license": "MIT",
+	"icon": "assets/chat-to-advancements/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.alonie.cta.ChatToAdvancements"
+		],
+		"client": [
+			"com.alonie.cta.client.ChatToAdvancementsClient"
+		]
+	},
+	"mixins": [
+		"chat-to-advancements.mixins.json",
+		{
+			"config": "chat-to-advancements.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.2",
+		"minecraft": "~1.21.11",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"advancements_reloaded": "*"
+	}
+}
